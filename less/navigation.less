@@ -5,10 +5,7 @@
   .header {
     max-width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .flexbox(column; center; center);
     background-color: @nav-bg;
     margin: 0;
 
@@ -18,8 +15,7 @@
 
     nav {
       min-width: 380px;
-      display: flex;
-      justify-content: space-between;
+      .flexbox(row; space-between; stretch);
     }
   }
 }
