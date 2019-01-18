@@ -13,3 +13,19 @@
 	align-items: @align-items;
   flex-wrap: @flex-wrap;
 }
+
+.button-style(@color: @btn-bg-color; @bg-color: @sea-shell) {
+  line-height: 35px;
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 20px;
+  text-align: center;
+  .border-style-radius(none; 4px);
+  color: @color;
+  background-color: @bg-color;
+  cursor: pointer;
+}
+
+.button-hover-style(@bg-color) {
+  background-color: darken(@bg-color, 25%);
+}
