@@ -1,1 +1,14 @@
 // Mixins Here
+// BORDER MIXIN
+.border-style-radius(@border-style: none; @border-radius: 0) {
+  border: @border-style;
+  border-radius: @border-radius;
+}
+
+// FLEXBOX MIXIN
+.flexbox(@flex-dir: row; @justify-cont: flex-start; @align-items: stretch) {
+	display: flex;
+	flex-direction: @flex-dir;
+	justify-content: @justify-cont;
+	align-items: @align-items;
+}
